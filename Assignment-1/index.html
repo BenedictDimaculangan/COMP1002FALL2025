@@ -27,6 +27,26 @@
         <section>
             <h2>Pizza Order</h2>
             <form action="" method="post"> <!-- Not actually proccessing the iformation anywhere-->
+
+                <!-- CUSTOMER INFORMATION -->
+                <fieldset>
+                    <legend>Customer Information</legend>
+
+                    <p>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </p>
+
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </p>
+                </fieldset>
                 <fieldset>
                     <legend>Details</legend>
 
@@ -140,14 +160,26 @@
                             <label for="greenpepper">Green Pepper</label>
                         </div>
                     </fieldset>
+
+                    <p>
+                        <label for="notes">Special Requests:</label><br>
+                        <textarea name="notes" id="nots" rows="4" cols="40"
+                        placeholder="example: extra sauce, extra topping, drop off at the front door"></textarea>
+                    </p>
                 </fieldset>
+
+                <div><!-- Submit and Reset Button-->
+                    <button type="submit">Confirm Order</button>
+                    <button type="reset">Reset Form</button>
+                </div>
             </form>
         </section>
     </main>
 
     <!--     FOOTER     -->
     <footer>
-
+        <p>&copy; Pizza Assignment</p>
+        <!-- Benedict Dimaculangan 2025 -->
     </footer>
 </body>
 </html>
