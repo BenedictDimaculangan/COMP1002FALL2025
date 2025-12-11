@@ -16,14 +16,64 @@
     <main>
         <section>
             <h2>Cuztomization</h2>
-            <p>Create The A Pizza To Your Liking</p>
-            <figure>
-                <img src="Plain_Pizza.jpeg" alt="Plain Pizza Illustration Clip-Art">
-                <figcaption>
-                    A Coloured Clip-Art Illustration of a Plain Pizza. Source: [illustAC](https://en.ac-illust.com/clip-art/24828126/plain-pizza).
-                </figcaption>
-            </figure>   
+            <p>Create The Pizza To Your Liking</p>
+            <!--   IMAGE   -->
+            <img src="Plain_Pizza.jpeg" alt="Plain Pizza Illustration Clip-Art">
+            <!--A Coloured Clip-Art Illustration of a Plain Pizza. Source: [illustAC](https://en.ac-illust.com/clip-art/24828126/plain-pizza).-->
             <p>Enter The Details Below</p>
+        </section>
+
+        <!-- FORM -->
+        <section>
+            <h2>Pizza Order</h2>
+            <form action="" method="post"> <!-- Not actually proccessing the iformation anywhere-->
+                <fieldset>
+                    <legend>Details</legend>
+
+                    <!--Amount of Pizzas-->
+                    <div> 
+                        <label for="quantity">Amount of Pizzas:</label>
+                        <input type="number" id="quantity" name="pizzaquatity" min="1" value="1" required />
+                    </div>
+
+                    <!--Pizza Size-->
+                    <div>
+                        <label for="size">Pizza Sizes:</label>
+                        <select name="size" id="size">
+                            <option value="6">Small(6 Slices)</option>
+                            <option value="8">Medium(8 Slices)</option>
+                            <option value="10">Large(10 Slices)</option>
+                            <option value="12">Extra Large(12 Slices)</option>
+                        </select>
+                    </div>
+
+                    <!-- Pizza Shape -->
+                    <fieldset>
+                        <legend>Shape</legend>
+                        
+                        <div><!-- Round/Circle-->
+                            <input type="radio" name="shape" id="round">
+                            <label for="round">Round</label>
+                        </div>
+
+                        <div><!-- Square -->
+                            <input type="radio" name="shape" id="square">
+                            <label for="square">Square</label>
+                        </div>
+
+                        <div><!-- Triangle -->
+                            <input type="radio" name="shape" id="triangle">
+                            <label for="triangle">Triangle</label>
+                        </div>
+                    </fieldset>
+
+                    <!-- Crust -->
+                    <fieldset>
+                        <legend>Crust</legend>
+                        
+                    </fieldset>
+                </fieldset>
+            </form>
         </section>
     </main>
 
